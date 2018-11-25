@@ -1,0 +1,123 @@
+
+.about {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr 2fr;
+    grid-gap: 10px;
+    min-height: 80vh;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.about *:focus {
+    outline: none;
+}
+
+.about h1.title {
+    font-size: 3rem;
+    grid-column: 1 / 3;
+    text-align: center;
+    font-family: fjalla;
+    color: #52a3c5;
+}
+
+.about .flip-card-bar {
+    grid-row: 2;
+}
+
+.about .flip-card-jonas {
+    grid-row: 3;
+}
+
+.about .flip-card-bar, .about .flip-card-jonas {
+    padding: 20px;
+    margin: 10px auto;
+    border-radius: 50%;
+    border: 1px solid #52a3c5c4;
+}
+
+
+.flip-card-bar, .flip-card-jonas {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+    border-radius: 50%;
+    grid-row: 2;
+}
+
+.flip-card-inner {
+    border-radius: 50%;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s ease-in-out;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card-bar:hover .flip-card-inner , .flip-card-jonas:hover .flip-card-inner , 
+.flip-card-bar:focus .flip-card-inner, .flip-card-jonas:focus .flip-card-inner{
+    transform: rotateY(180deg);
+    cursor: pointer;
+}
+
+.flip-card-front, .flip-card-back {
+    border-radius: 50%;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: visible;
+    font-size: 1.2rem;
+    font-family: fjalla;
+}
+
+.flip-card-front {
+    border-radius: 50%;
+    background-color: #bbb;
+    color: black;
+    z-index: 2;
+}
+
+.flip-card-back {
+    border-radius: 50%;
+    background-color: #52a3c5cc;
+    color: white;
+    transform: rotateY(180deg);
+    z-index: 1;
+}
+
+.flip-card-front img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+@media (min-width:770px) {
+    .about {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 3fr;
+        align-items: center;
+
+    }
+
+    .flip-card-bar, .flip-card-jonas {
+        background-color: transparent;
+        width: 80%;
+        height: 100%;
+        grid-row: 2;
+        max-width: 450px;
+    }
+
+    .flip-card-bar {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .about .flip-card-jonas {
+        grid-column: 2;
+        grid-row: 2;
+    }
+}

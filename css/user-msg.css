@@ -1,0 +1,43 @@
+.user-msg {
+    position: fixed;
+    top: 0;
+    right: -100vw;
+    background-color: rgba(255, 255, 255, 0.897);
+    color: black;
+    padding: 0 30px;
+    border-bottom-left-radius: 20px;
+    font-size: 1.5rem;
+    transition: .3s;
+    z-index: 1;
+    outline: 5px solid rgba(255, 255, 255, 0.897);
+    -moz-outline-radius-bottomleft: 5px;
+}
+
+.user-msg button {
+    cursor: pointer;
+    border: none;
+    position: absolute;
+    top: 70%;
+    left: 40%;
+    background-color: transparent;
+    font-size: 1.5rem;
+}
+
+.success {
+    right: 0;
+    border: 2px solid green;
+    color: green;
+}
+
+.error {
+    right: 0;
+    border: 2px solid red;
+    color: red;
+}
+
+.welcome {
+    right: 0;
+    border: 2px solid #52a3c5;
+    color: #52a3c5;
+
+}

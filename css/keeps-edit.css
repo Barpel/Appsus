@@ -1,0 +1,256 @@
+.keep-edit-container {
+margin: 1rem;
+border: 1px solid #5bb6de;
+border-radius: 5px;
+padding: .7rem 0;
+}
+
+.keep-edit-container *{
+    font-size: 1.3rem;
+    font-family: fjalla;
+}
+
+.keep-edit-container > *{
+    margin-bottom: .4rem;
+}
+
+.keep-edit-title input[type="text"] {
+    font-size: 1.5rem;
+    padding: .4rem;
+    border-radius: 5px;
+    border: 1px solid #5bb6de;
+    color: rgba(0, 0, 0, 0.747);
+}
+
+.keep-edit-title input[type="text"]:focus {
+    outline: none;
+}
+
+.keep-edit-nav * {
+    font-size: 2.5rem;
+    color: #5bb6de;
+}
+
+.keep-edit-text-container {
+    text-align: center;
+    max-width: 100%;
+}
+
+.keep-edit-text-container textarea {
+    max-width: 90%;
+    font-size: 1.5rem;
+    padding: .4rem;
+    border-radius: 5px;
+    border: 1px solid #5bb6de;
+    padding: 20px;
+    color: rgba(0, 0, 0, 0.747);
+}
+
+.keep-edit-tasks-container input {
+    padding: .4rem;
+    border-radius: 5px;
+    border: 1px solid #5bb6de;
+    color: rgba(0, 0, 0, 0.747);
+}
+
+.keep-edit-tasks-container input::placeholder {
+    color: rgba(0, 0, 0, 0.212);
+}
+
+.keep-task-ul {
+    padding: 0;
+    max-width:85%;
+    list-style-type: circle;
+    color: rgba(0, 0, 0, 0.747);
+}
+.keep-task-ul li {
+    display: inline-list-item;
+}
+
+.keep-edit-btn {
+    cursor: pointer;
+    font-size: 1.2rem;
+    background-color: transparent;
+    border: none;
+}
+
+a.keep-edit-btn {
+    color: black;
+}
+
+.keep-edit-task-dlt {
+    font-size: 1.5rem;
+    margin-left: 1rem;
+    transition: all .3s;
+}
+
+.keep-edit-task-dlt:hover {
+    opacity: 0.8;
+    transform: scale(0.95);
+}
+
+.keeps-custom-colorPicker {
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+.keeps-custom-colorPicker input {
+    display: none;
+}
+
+.keeps-custom-upload {
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+.keeps-custom-upload input {
+    display: none;
+}
+
+.keep-edit-img {
+    text-align: center;
+}
+
+.keep-edit-img img {
+    max-width: 90%;
+}
+
+
+@media (min-width:360px) {
+    .keep-edit-title input[type="text"] {
+        font-size: 1.7rem;
+    }
+    .keep-edit-nav * {
+        font-size: 2.7rem;
+        margin: 0 2px;
+    }
+    .keep-edit-text-container textarea {
+        font-size: 1.7rem;
+    }
+    .keep-edit-tasks-container input{
+        font-size: 1.45rem;
+    }
+    .keep-edit-tasks {
+        font-size: 1.2rem;
+    }
+        
+   
+}
+@media (min-width:460px) {
+    .keep-edit-title input[type="text"] {
+        font-size: 1.9rem;
+    }
+    .keep-edit-nav * {
+        font-size: 3rem;
+        margin: 0 7px;
+
+
+    }
+    .keep-edit-text-container textarea {
+        font-size: 1.8rem;
+    }
+    .keep-edit-tasks-container input {
+        font-size: 1.6rem;
+    }
+    .keep-edit-tasks {
+        font-size: 1.5rem;
+    }
+    .keep-edit-task-dlt {
+        font-size: 2rem;
+    }
+
+     
+   
+}
+@media (min-width:560px) {
+    .keep-edit-title input[type="text"] {
+        font-size: 2.3rem;
+    }
+    .keep-edit-nav * {
+        font-size: 3.3rem;
+        margin: 0 10px;
+    }
+    .keep-edit-text-container textarea {
+        font-size: 2.1rem;
+    }
+    .keep-edit-tasks-container input {
+        font-size: 2rem;
+    }
+    .keep-edit-tasks {
+        font-size: 2rem;
+    }
+    .keep-edit-task-dlt {
+        font-size: 2.5rem;
+    }
+}
+
+@media (min-width:810px) {
+    .keep-edit-title input[type="text"] {
+        font-size: 2.6rem;
+    }
+    .keep-edit-nav * {
+        font-size: 4rem;
+        margin: 0 20px;
+
+    }
+    .keep-edit-text-container textarea {
+        font-size: 2.5rem;
+    }
+    .keep-edit-tasks-container input {
+        font-size: 2.3rem;
+    }
+    .keep-edit-tasks {
+        font-size: 2.3rem;
+    }
+    .keep-edit-task-dlt {
+        font-size: 2.8rem;
+    }
+/* 
+    .keep-task-ul {
+        column-count: 2;
+    }
+    .keep-task-ul li {
+        margin: 0 10px;
+    } */
+}
+@media (min-width:1060px) {
+    .keep-edit-title input[type="text"] {
+        font-size: 3rem;
+    }
+    .keep-edit-nav * {
+        font-size: 5rem;
+        margin: 0 28px;
+    }
+    .keep-edit-text-container textarea {
+        font-size: 3.3rem;
+    }
+    .keep-edit-tasks-container input {
+        font-size: 2.6rem;
+    }
+    .keep-edit-tasks {
+        font-size: 2.8rem;
+    }
+    .keep-edit-task-dlt {
+        font-size: 3.4rem;
+    }
+}
+@media (min-width:1300px) {
+    .keep-edit-title input[type="text"] {
+        font-size: 3.5rem;
+    }
+    .keep-edit-nav * {
+        font-size: 7rem;
+        margin: 0 40px;
+
+    }
+    .keep-edit-text-container textarea {
+        font-size: 3.8rem;
+    }
+    .keep-edit-tasks-container input {
+        font-size: 3rem;
+    }
+    .keep-edit-tasks {
+        font-size: 3.4rem;
+    }
+    .keep-edit-task-dlt {
+        font-size: 4rem;
+    }
+}

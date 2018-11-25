@@ -1,0 +1,100 @@
+.compose-email-toolbar {
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 10px;
+    align-items: center;
+    font-size: 2rem;
+    border: 1px solid #52a3c5;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    max-height: fit-content;
+    justify-content: flex-start;
+}
+
+.compose-email-toolbar a {
+    color: #52a3c5;
+}
+
+.compose-email-toolbar h1 {
+    margin: 0;
+}
+
+.compose-email-container {
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    background-color: #52a3c5;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 3fr;
+    grid-gap: 15px;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.compose-email-container * {
+    border-radius: 5px;
+    max-width: 80vw;
+}
+
+.compose-email-container input {
+    font-size: 1.8rem;
+    padding: 10px;
+    border: 1px solid #478ba8;
+    font-family: fjalla;
+}
+
+.compose-email-container input::placeholder {   
+    color: rgba(102, 102, 102, 0.479);
+}
+
+.compose-email-body {
+    height: 100%;
+}
+
+.compose-email-container textarea {
+    width: 100%;
+    height: 90%;
+    resize: none;
+    font-size: 2rem;
+    padding: 10px;
+    border: 1px solid #478ba8;
+    font-family: fjalla;
+}
+
+.compose-email-body textarea::placeholder {
+    color: rgba(102, 102, 102, 0.479);
+}
+
+.send-email-btn {
+    width: 100px;
+    margin: 0 auto;
+    cursor: pointer;
+    height: 50px;
+    text-align: center;
+    background-color: white;
+    border: none;
+    font-size: 1.5rem;
+    color: #52a3c5;
+    transition: all .3s;
+}
+
+.send-email-btn:hover {
+    opacity: 0.8;
+    transform: scale(0.95);
+}
+
+@media (min-width: 440px) {
+    .compose-email-container textarea {
+        width: 97%;
+    }
+}
+
+@media (min-width: 880px) {
+    .compose-email-container {
+        max-width: 80%;
+        margin: 0 auto;
+    }
+}

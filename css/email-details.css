@@ -1,0 +1,196 @@
+.email-details-header a , .email-details-header h1{
+    text-align: center;
+    color: #52a3c5;
+    text-transform: uppercase;
+}
+
+.email-details-header {
+    margin: 0 auto;
+    max-width: 200px;
+    font-family: fjalla;
+}
+
+.details-toolbar {
+    margin: 10px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+}
+
+.details-toolbar button {
+    background-color: white;
+    border: 1px solid #52a3c5b2;
+    color: #52a3c5;
+    text-align: center;
+    padding: 10px;
+    max-width: 150px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    max-height: fit-content;
+    transition: all .3s ease-out;
+    font-family: fjalla;
+}
+
+.details-toolbar button:hover {
+    transform: scale(0.95);
+    opacity: 0.8;
+}
+
+.details-toolbar button svg {
+    font-size: 1.4rem;
+}
+
+.email-details-container >* {
+    color: #52a3c5;
+}
+
+.email-details-container {
+    margin: 20px 5px;
+    border: 1px solid #52a3c5;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.details-sender {
+    font-weight: bold;
+    font-size: 2rem;
+    font-family: robotoReg;
+}
+
+.details-subject-txt {
+    font-family: robotoReg;
+}
+
+.details-subject-sentAt {
+    font-family: robotoReg;
+    color: #52a3c5b6;
+    transform: skew(5deg);
+    margin: 10px;
+    font-size: 1.2em;
+}
+
+.details-body-container {
+    border: 1px solid #52a3c580;
+    margin: 20px;
+    border-radius: 5px;
+}
+
+.details-body-txt {
+    font-family: robotoReg;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    font-size: 1.3rem;
+}
+
+.email-actions-container {
+    border-radius: 5px;
+    background-color: #52a3c5bd;
+    padding: 20px;
+}
+
+.email-actions-container button {
+    padding: 10px;
+    font-size: 1.4rem;
+    background-color: white;
+    color: #52a3c5;
+    border: 0.5px solid rgba(102, 102, 102, 0.514);
+    border-radius: 5px;
+    width: 100px;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: all .3s;
+    font-family: fjalla;
+}
+
+.email-actions-container button:hover {
+    transform: scale(0.98);
+    opacity: 0.8;
+}
+
+
+.reply-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 80%;
+    height: 80%;
+    display: grid;
+    align-items: center;
+    grid-gap: 15px;
+    z-index: 2;
+    height: 80%;
+    max-width: 100%;
+    padding: 50px 30px;
+}
+
+.reply .reply-background {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(102, 102, 102, 0.521);
+    min-height: 100vh;
+    width: 100%;
+}
+
+.reply-email-body{
+    height: 75%;
+    width: 100%;
+    text-align: center;
+    align-self: flex-start;
+}
+
+.reply-container input {
+    padding: 20px;
+    font-size: 1.7rem;
+    width: 99%;
+    font-family: fjalla;
+    border: 5px solid #52a3c5;
+    border-radius: 5px;
+}
+
+.reply-email-body textarea {
+    border: 5px solid #52a3c5;
+    border-radius: 5px;
+    font-size: 1.7rem;
+    resize: none;
+    width: 99%;
+    height: 75%;
+    padding: 20px;
+    font-family: fjalla;
+}
+
+.reply-container .send-reply-btn {
+    width: 80px;
+    height: 60px;
+    border-radius: 5px;
+    border: 1px solid #52a3c5;
+    background-color: white;
+    font-size: 1.3rem;
+    cursor: pointer;
+    font-family: fjalla;
+    transition: all .3s;
+}
+
+.cancel-reply-btn {
+    position: fixed;
+    border: 1px solid #52a3c5;
+    background-color: white;
+    border-radius: 5px;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    margin: 0 30px;
+    padding: 10px;
+    font-size: 1.2rem;
+    font-family: fjalla;
+    transition: all .3s;
+}
+
+.cancel-reply-btn:hover, .reply-container .send-reply-btn:hover {
+    cursor: pointer;
+    opacity: 0.8;
+    transform: scale(0.95);
+}

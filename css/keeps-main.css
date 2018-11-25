@@ -1,0 +1,21 @@
+@import url('./keeps-list.css');
+@import url('./keeps-edit.css');
+
+/* ROOT */
+.keep-app * {
+    box-sizing: border-box;
+    font-family: fjalla;
+}
+
+.keep-app ul{
+    list-style-type: none;
+}
+.keep-app h1, .keep-app h2, .keep-app h3,.keep-app h4,.keep-app h5,.keep-app h6, .keep-app p {
+    margin: 0;
+    padding: 0;
+}
+.keep-app button {
+    cursor: pointer;
+}
+
+/* KEEPS */

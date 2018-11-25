@@ -1,0 +1,17 @@
+@import url('email-list.css');
+@import url('email-details.css');
+@import url('email-compose.css');
+
+.email-app-container  * {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: fjalla;
+}
+
+.email-app-container button {
+    cursor: pointer;
+}
+
+.router-link-active, a {
+    text-decoration: none;
+}
